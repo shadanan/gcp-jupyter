@@ -1,0 +1,1940 @@
+[
+  {
+    "finding_type": "ADMIN_SERVICE_ACCOUNT",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "1.4"
+      ],
+      "CIS 1.1 Level 1": [
+        "1.5"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Organization",
+      "google.cloud.resourcemanager.Folder",
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "API_KEY_APIS_UNRESTRICTED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "1.12"
+      ],
+      "CIS 1.1 Level 1": [
+        "1.14"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "API_KEY_APPS_UNRESTRICTED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "1.11"
+      ],
+      "CIS 1.1 Level 1": [
+        "1.13"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "API_KEY_EXISTS",
+    "compliance_metadata": {
+      "CIS 1.0 Level 2": [
+        "1.10"
+      ],
+      "CIS 1.1 Level 2": [
+        "1.12"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "API_KEY_NOT_ROTATED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "1.13"
+      ],
+      "CIS 1.1 Level 1": [
+        "1.15"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "AUDIT_CONFIG_NOT_MONITORED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "2.5"
+      ],
+      "CIS 1.1 Level 1": [
+        "2.5"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "AUDIT_LOGGING_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "2.1"
+      ],
+      "CIS 1.1 Level 1": [
+        "2.1"
+      ],
+      "PCI": [
+        "10.1",
+        "10.2"
+      ],
+      "NIST": [
+        "AC-2",
+        "AU-2"
+      ],
+      "ISO": [
+        "A.12.4.1",
+        "A.16.1.7"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Organization",
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "AUTO_BACKUP_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.1 Level 1": [
+        "6.7"
+      ],
+      "NIST": [
+        "CP-9"
+      ],
+      "ISO": [
+        "A.12.3.1"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "AUTO_REPAIR_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "7.7"
+      ],
+      "PCI": [
+        "2.2"
+      ]
+    },
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "AUTO_UPGRADE_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "7.8"
+      ],
+      "PCI": [
+        "2.2"
+      ]
+    },
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "BUCKET_CMEK_DISABLED",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.cloud.storage.Bucket"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "BUCKET_IAM_NOT_MONITORED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "2.10"
+      ],
+      "CIS 1.1 Level 1": [
+        "2.10"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "BUCKET_LOGGING_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "5.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.storage.Bucket"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "BUCKET_POLICY_ONLY_DISABLED",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.cloud.storage.Bucket"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "CLUSTER_ADMIN_ROLE_USED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 2": [
+        "5.1.1"
+      ]
+    },
+    "resource_types": [
+      "rbac.authorization.k8s.io.ClusterRoleBinding"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "CLUSTER_LOGGING_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "7.1"
+      ],
+      "PCI": [
+        "10.2.2",
+        "10.2.7"
+      ]
+    },
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "CLUSTER_MONITORING_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "7.2"
+      ],
+      "PCI": [
+        "10.1",
+        "10.2"
+      ]
+    },
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "CLUSTER_PRIVATE_GOOGLE_ACCESS_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "7.1"
+      ],
+      "PCI": [
+        "1.3"
+      ]
+    },
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "COMPUTE_PROJECT_WIDE_SSH_KEYS_ALLOWED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "4.2"
+      ],
+      "CIS 1.1 Level 1": [
+        "4.3"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "COMPUTE_SECURE_BOOT_DISABLED",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.compute.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "COMPUTE_SERIAL_PORTS_ENABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "4.4"
+      ],
+      "CIS 1.1 Level 1": [
+        "4.5"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "COS_NOT_USED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 2": [
+        "7.9"
+      ],
+      "PCI": [
+        "2.2"
+      ]
+    },
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "CUSTOM_ROLE_NOT_MONITORED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "2.6"
+      ],
+      "CIS 1.1 Level 1": [
+        "2.6"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "DEFAULT_NETWORK",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "3.1"
+      ],
+      "CIS 1.1 Level 2": [
+        "3.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Network"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "DEFAULT_SERVICE_ACCOUNT_USED",
+    "compliance_metadata": {
+      "CIS 1.1 Level 1": [
+        "4.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "DISALLOWED_BQ4G_ENABLED_API",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "DISALLOWED_BQ4G_IDENTITY",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.cloud.resourcemanager.Project",
+      "google.cloud.resourcemanager.Folder",
+      "google.cloud.bigquery.Dataset",
+      "bigquery.googleapis.com/Table"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "DISK_CMEK_DISABLED",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.compute.Disk"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "DISK_CSEK_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 2": [
+        "4.6"
+      ],
+      "CIS 1.1 Level 2": [
+        "4.7"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Disk"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "DNSSEC_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "3.3"
+      ],
+      "CIS 1.1 Level 1": [
+        "3.3"
+      ],
+      "ISO": [
+        "A.8.2.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.dns.ManagedZone"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "EGRESS_DENY_RULE_NOT_SET",
+    "compliance_metadata": {
+      "PCI": [
+        "7.2"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "FIREWALL_NOT_MONITORED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "2.7"
+      ],
+      "CIS 1.1 Level 1": [
+        "2.7"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "FIREWALL_RULE_LOGGING_DISABLED",
+    "compliance_metadata": {
+      "PCI": [
+        "10.1",
+        "10.2"
+      ],
+      "NIST": [
+        "SI-4"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "FLOW_LOGS_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "3.9"
+      ],
+      "CIS 1.1 Level 1": [
+        "3.8"
+      ],
+      "PCI": [
+        "10.1",
+        "10.2"
+      ],
+      "NIST": [
+        "SI-4"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Subnetwork"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "FULL_API_ACCESS",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "4.1"
+      ],
+      "CIS 1.1 Level 1": [
+        "4.2"
+      ],
+      "PCI": [
+        "7.1.2"
+      ],
+      "NIST": [
+        "AC-6"
+      ],
+      "ISO": [
+        "A.9.2.3"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "HTTP_LOAD_BALANCER",
+    "compliance_metadata": {
+      "PCI": [
+        "2.3"
+      ]
+    },
+    "resource_types": [
+      "google.compute.TargetHttpProxy"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "IP_ALIAS_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "7.1"
+      ],
+      "PCI": [
+        "1.3.4",
+        "1.3.7"
+      ]
+    },
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "IP_FORWARDING_ENABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "4.5"
+      ],
+      "CIS 1.1 Level 1": [
+        "4.6"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "KMS_KEY_NOT_ROTATED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "1.8"
+      ],
+      "CIS 1.1 Level 1": [
+        "1.10"
+      ],
+      "PCI": [
+        "3.5"
+      ],
+      "NIST": [
+        "SC-12"
+      ],
+      "ISO": [
+        "A.10.1.2"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.kms.CryptoKey"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "KMS_PROJECT_HAS_OWNER",
+    "compliance_metadata": {
+      "CIS 1.1 Level 1": [
+        "1.11"
+      ],
+      "PCI": [
+        "3.5"
+      ],
+      "NIST": [
+        "AC-6",
+        "SC-12"
+      ],
+      "ISO": [
+        "A.9.2.3",
+        "A.10.1.2"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "KMS_PUBLIC_KEY",
+    "compliance_metadata": {
+      "CIS 1.1 Level 1": [
+        "1.9"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.kms.CryptoKey",
+      "google.cloud.kms.KeyRing"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "KMS_ROLE_SEPARATION",
+    "compliance_metadata": {
+      "CIS 1.0 Level 2": [
+        "1.9"
+      ],
+      "CIS 1.1 Level 2": [
+        "1.11"
+      ],
+      "NIST": [
+        "AC-5"
+      ],
+      "ISO": [
+        "A.9.2.3",
+        "A.10.1.2"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Organization",
+      "google.cloud.resourcemanager.Folder",
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "LEGACY_AUTHORIZATION_ENABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "7.3"
+      ],
+      "PCI": [
+        "4.1"
+      ]
+    },
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "LEGACY_METADATA_ENABLED",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "LEGACY_NETWORK",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "3.2"
+      ],
+      "CIS 1.1 Level 1": [
+        "3.2"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Network"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "LOCKED_RETENTION_POLICY_NOT_SET",
+    "compliance_metadata": {
+      "CIS 1.1 Level 1": [
+        "2.3"
+      ],
+      "PCI": [
+        "10.5"
+      ],
+      "NIST": [
+        "AU-11"
+      ],
+      "ISO": [
+        "A.12.4.2",
+        "A.18.1.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.storage.Bucket"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "LOG_NOT_EXPORTED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "2.2"
+      ],
+      "CIS 1.1 Level 1": [
+        "2.2"
+      ],
+      "ISO": [
+        "A.18.1.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "MASTER_AUTHORIZED_NETWORKS_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "7.4"
+      ],
+      "PCI": [
+        "1.2.1",
+        "1.3.2"
+      ]
+    },
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "MFA_NOT_ENFORCED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "1.2"
+      ],
+      "CIS 1.1 Level 1": [
+        "1.2"
+      ],
+      "PCI": [
+        "8.3"
+      ],
+      "NIST": [
+        "IA-2"
+      ],
+      "ISO": [
+        "A.9.4.2"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Organization"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "NETWORK_NOT_MONITORED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "2.9"
+      ],
+      "CIS 1.1 Level 1": [
+        "2.9"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "NETWORK_POLICY_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "7.1"
+      ],
+      "PCI": [
+        "1.3"
+      ],
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "NODEPOOL_BOOT_CMEK_DISABLED",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "NON_ORG_IAM_MEMBER",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "1.1"
+      ],
+      "CIS 1.1 Level 1": [
+        "1.1"
+      ],
+      "PCI": [
+        "7.1.2"
+      ],
+      "NIST": [
+        "AC-3"
+      ],
+      "ISO": [
+        "A.9.2.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Organization",
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OBJECT_VERSIONING_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "2.3"
+      ],
+      "PCI": [
+        "10.5"
+      ],
+      "NIST": [
+        "AU-11"
+      ],
+      "ISO": [
+        "A.12.4.2",
+        "A.18.1.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.storage.Bucket"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "OPEN_CASSANDRA_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_CISCOSECURE_WEBSM_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_DIRECTORY_SERVICES_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_DNS_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_ELASTICSEARCH_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_FIREWALL",
+    "compliance_metadata": {
+      "PCI": "1.2.1"
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_FTP_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_HTTP_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_LDAP_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_MEMCACHED_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_MONGODB_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_MYSQL_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_NETBIOS_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_ORACLEDB_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_POP3_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_POSTGRESQL_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_RDP_PORT",
+    "compliance_metadata": {
+      "CIS 1.0 Level 2": [
+        "3.7"
+      ],
+      "CIS 1.1 Level 2": [
+        "3.7"
+      ],
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_REDIS_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_SMTP_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_SSH_PORT",
+    "compliance_metadata": {
+      "CIS 1.0 Level 2": [
+        "3.6"
+      ],
+      "CIS 1.1 Level 2": [
+        "3.6"
+      ],
+      "PCI": [
+        "1.2.1"
+      ],
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "OPEN_TELNET_PORT",
+    "compliance_metadata": {
+      "PCI": "1.2.1",
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.13.1.1"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Firewall"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "ORG_POLICY_CONFIDENTIAL_VM_POLICY",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.compute.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "ORG_POLICY_LOCATION_RESTRICTION",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.compute.Address",
+      "google.compute.Autoscaler",
+      "google.cloud.storage.Bucket",
+      "google.compute.Commitment",
+      "google.composer.Environment",
+      "google.cloud.kms.CryptoKey",
+      "google.cloud.kms.CryptoKeyVersion",
+      "google.dataflow.Job",
+      "google.dataproc.Cluster",
+      "google.cloud.bigquery.Dataset",
+      "google.compute.Disk",
+      "google.compute.ForwardingRule",
+      "google.compute.HealthCheck",
+      "google.compute.Image",
+      "google.compute.Instance",
+      "google.compute.InstanceGroup",
+      "google.compute.InstanceGroupManager",
+      "google.compute.InterconnectAttachment",
+      "google.cloud.kms.KeyRing",
+      "google.cloud.kms.ImportJob",
+      "google.logging.LogBucket",
+      "google.compute.NetworkEndpointGroup",
+      "google.compute.NodeGroup",
+      "google.compute.NodeTemplate",
+      "google.compute.PacketMirroring",
+      "google.pubsub.Topic",
+      "google.compute.RegionBackendService",
+      "google.compute.RegionDisk",
+      "google.compute.Reservation",
+      "google.compute.ResourcePolicy",
+      "google.compute.Router",
+      "google.compute.Snapshot",
+      "google.cloud.sql.Instance",
+      "google.compute.SslCertificate",
+      "google.compute.Subnetwork",
+      "google.compute.TargetHttpProxy",
+      "google.compute.TargetHttpsProxy",
+      "google.compute.TargetInstance",
+      "google.compute.TargetPool",
+      "google.compute.TargetVpnGateway",
+      "google.compute.UrlMap",
+      "google.compute.VpnGateway",
+      "google.compute.VpnTunnel"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "OS_LOGIN_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "4.3"
+      ],
+      "CIS 1.1 Level 1": [
+        "4.4"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Project"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "OVER_PRIVILEGED_ACCOUNT",
+    "compliance_metadata": {
+      "CIS 1.0 Level 2": [
+        "7.1"
+      ],
+      "PCI": [
+        "2.1",
+        "7.1.2"
+      ],
+      "NIST": [
+        "AC-6",
+        "SC-7"
+      ],
+      "ISO": [
+        "A.9.2.3"
+      ]
+    },
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "OVER_PRIVILEGED_SCOPES",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "7.1"
+      ]
+    },
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "OVER_PRIVILEGED_SERVICE_ACCOUNT_USER",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "1.5"
+      ],
+      "CIS 1.1 Level 1": [
+        "1.6"
+      ],
+      "PCI": [
+        "7.1.2"
+      ],
+      "NIST": [
+        "AC-6"
+      ],
+      "ISO": [
+        "A.9.2.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Organization",
+      "google.cloud.resourcemanager.Folder",
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "OWNER_NOT_MONITORED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "2.4"
+      ],
+      "CIS 1.1 Level 1": [
+        "2.4"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "POD_SECURITY_POLICY_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "7.1"
+      ]
+    },
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "PRIMITIVE_ROLES_USED",
+    "compliance_metadata": {
+      "PCI": [
+        "7.1.2"
+      ],
+      "NIST": [
+        "AC-6"
+      ],
+      "ISO": [
+        "A.9.2.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Organization",
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "PRIVATE_CLUSTER_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "7.1"
+      ],
+      "PCI": [
+        "1.3.2"
+      ]
+    },
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "PRIVATE_GOOGLE_ACCESS_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 2": [
+        "3.8"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Subnetwork"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "PUBLIC_BUCKET_ACL",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "5.1"
+      ],
+      "CIS 1.1 Level 1": [
+        "5.1"
+      ],
+      "PCI": [
+        "7.1"
+      ],
+      "NIST": [
+        "AC-2"
+      ],
+      "ISO": [
+        "A.8.2.3",
+        "A.14.1.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.storage.Bucket"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "PUBLIC_COMPUTE_IMAGE",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.compute.Image"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "PUBLIC_DATASET",
+    "compliance_metadata": {
+      "PCI": [
+        "7.1"
+      ],
+      "NIST": [
+        "AC-2"
+      ],
+      "ISO": [
+        "A.8.2.3",
+        "A.14.1.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.bigquery.Dataset"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "PUBLIC_IP_ADDRESS",
+    "compliance_metadata": {
+      "CIS 1.1 Level 2": [
+        "4.9"
+      ],
+      "PCI": [
+        "1.2.1"
+      ],
+      "NIST": [
+        "CA-3",
+        "SC-7"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Instance"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "PUBLIC_LOG_BUCKET",
+    "compliance_metadata": {
+      "PCI": [
+        "10.5"
+      ],
+      "NIST": [
+        "AU-9"
+      ],
+      "ISO": [
+        "A.8.2.3",
+        "A.12.4.2",
+        "A.18.1.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.storage.Bucket"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "PUBLIC_SQL_INSTANCE",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "6.2"
+      ],
+      "CIS 1.1 Level 1": [
+        "6.5"
+      ],
+      "PCI": [
+        "1.2.1"
+      ],
+      "NIST": [
+        "CA-3",
+        "SC-7"
+      ],
+      "ISO": [
+        "A.8.2.3",
+        "A.13.1.3",
+        "A.14.1.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "PUBSUB_CMEK_DISABLED",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.pubsub.Topic"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "REDIS_ROLE_USED_ON_ORG",
+    "compliance_metadata": {
+      "PCI": [
+        "7.1.2"
+      ],
+      "ISO": [
+        "A.9.2.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Organization"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "ROUTE_NOT_MONITORED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "2.8"
+      ],
+      "CIS 1.1 Level 1": [
+        "2.8"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "RSASHA1_FOR_SIGNING",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "3.4",
+        "3.5"
+      ],
+      "CIS 1.1 Level 1": [
+        "3.4",
+        "3.5"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.dns.ManagedZone"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SERVICE_ACCOUNT_KEY_NOT_ROTATED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "1.6"
+      ],
+      "CIS 1.1 Level 1": [
+        "1.7"
+      ]
+    },
+    "resource_types": [
+      "google.iam.ServiceAccountKey"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SERVICE_ACCOUNT_ROLE_SEPARATION",
+    "compliance_metadata": {
+      "CIS 1.0 Level 2": [
+        "1.7"
+      ],
+      "CIS 1.1 Level 2": [
+        "1.8"
+      ],
+      "NIST": [
+        "AC-5"
+      ],
+      "ISO": [
+        "A.9.2.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Organization",
+      "google.cloud.resourcemanager.Folder",
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SHIELDED_VM_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.1 Level 2": [
+        "4.8"
+      ]
+    },
+    "resource_types": [
+      "google.compute.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SQL_CMEK_DISABLED",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SQL_CONTAINED_DATABASE_AUTHENTICATION",
+    "compliance_metadata": {
+      "CIS 1.1 Level 1": [
+        "6.3.2"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SQL_CROSS_DB_OWNERSHIP_CHAINING",
+    "compliance_metadata": {
+      "CIS 1.1 Level 1": [
+        "6.3.1"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SQL_INSTANCE_NOT_MONITORED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "2.11"
+      ],
+      "CIS 1.1 Level 1": [
+        "2.11"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.resourcemanager.Project"
+    ],
+    "severity": "LOW"
+  },
+  {
+    "finding_type": "SQL_LOCAL_INFILE",
+    "compliance_metadata": {
+      "CIS 1.1 Level 1": [
+        "6.1.2"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SQL_LOG_CHECKPOINTS_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.1 Level 1": [
+        "6.2.1"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SQL_LOG_CONNECTIONS_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.1 Level 1": [
+        "6.2.2"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SQL_LOG_DISCONNECTIONS_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.1 Level 1": [
+        "6.2.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SQL_LOG_LOCK_WAITS_DISABLED",
+    "compliance_metadata": {
+      "CIS 1.1 Level 1": [
+        "6.2.4"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SQL_LOG_MIN_DURATION_STATEMENT_ENABLED",
+    "compliance_metadata": {
+      "CIS 1.1 Level 1": [
+        "6.2.7"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SQL_LOG_MIN_ERROR_STATEMENT",
+    "compliance_metadata": {
+      "CIS 1.1 Level 1": [
+        "6.2.5"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SQL_LOG_TEMP_FILES",
+    "compliance_metadata": {
+      "CIS 1.1 Level 1": [
+        "6.2.6"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SQL_NO_ROOT_PASSWORD",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "6.3"
+      ],
+      "CIS 1.1 Level 1": [
+        "6.1.1"
+      ],
+      "PCI": [
+        "2.1"
+      ],
+      "NIST": [
+        "AC-3"
+      ],
+      "ISO": [
+        "A.8.2.3",
+        "A.9.4.2"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "SQL_PUBLIC_IP",
+    "compliance_metadata": {
+      "CIS 1.1 Level 2": [
+        "6.6"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "SQL_WEAK_ROOT_PASSWORD",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "SSL_NOT_ENFORCED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "6.1"
+      ],
+      "CIS 1.1 Level 1": [
+        "6.4"
+      ],
+      "PCI": [
+        "4.1"
+      ],
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.8.2.3",
+        "A.13.2.1",
+        "A.14.1.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.sql.Instance"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "TOO_MANY_KMS_USERS",
+    "compliance_metadata": {
+      "PCI": [
+        "3.5.2"
+      ],
+      "ISO": [
+        "A.9.2.3"
+      ]
+    },
+    "resource_types": [
+      "google.cloud.kms.CryptoKey"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "UNENROLLED_BQ4G_BCID_IDENTITY",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.cloud.resourcemanager.Project",
+      "google.cloud.resourcemanager.Folder",
+      "google.cloud.bigquery.Dataset",
+      "bigquery.googleapis.com/Table"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "UNENROLLED_REAUTH_IDENTITY",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.cloud.resourcemanager.Project",
+      "google.cloud.resourcemanager.Folder",
+      "google.cloud.bigquery.Dataset",
+      "bigquery.googleapis.com/Table"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "USER_MANAGED_SERVICE_ACCOUNT_KEY",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "1.3"
+      ],
+      "CIS 1.1 Level 1": [
+        "1.4"
+      ]
+    },
+    "resource_types": [
+      "google.iam.ServiceAccountKey"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "WEAK_SSL_POLICY",
+    "compliance_metadata": {
+      "PCI": [
+        "4.1"
+      ],
+      "NIST": [
+        "SC-7"
+      ],
+      "ISO": [
+        "A.14.1.3"
+      ]
+    },
+    "resource_types": [
+      "google.compute.TargetHttpsProxy",
+      "google.compute.TargetSslProxy"
+    ],
+    "severity": "MEDIUM"
+  },
+  {
+    "finding_type": "WEB_UI_ENABLED",
+    "compliance_metadata": {
+      "CIS 1.0 Level 1": [
+        "7.6"
+      ],
+      "PCI": [
+        "6.6"
+      ]
+    },
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "HIGH"
+  },
+  {
+    "finding_type": "WORKLOAD_IDENTITY_DISABLED",
+    "compliance_metadata": {},
+    "resource_types": [
+      "google.container.Cluster"
+    ],
+    "severity": "MEDIUM"
+  }
+]
